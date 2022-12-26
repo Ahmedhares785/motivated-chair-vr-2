@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+    <title>sign_in</title>
+</head>
+<body show-background-image style="background-color: dimgray;">
+    
+
+<form action ="buy_now.html">
+    <div>
+     <label for="user">username</label>
+    <input id="user"  type="text" placeholder="example:mazen" name="username">
+    </div>
+
+   <div>
+    <label for="myInput">password</label>
+    <input id="password" type="password" placeholder="example:12345" name="password">
+    <input type="checkbox" onclick="myFunction()">Show Password
+    <script>
+        function myFunction() {
+          var x = document.getElementById("password");
+          if (x.type === "password") {
+            x.type = "text";
+          } else {
+            x.type = "password";
+          }
+        }
+        </script>
+   </div>
+   
+   <div>
+    <label for="phone">phone number</label>
+    <input id="phone" type="number" min="0" max="100000000000" name="phone number">
+
+
+   </div>
+   <div>
+    <input id="sign in" type="submit" value="sign in">
+   </div>
+
+
+</form>
+
+
+</body>
+</html>
